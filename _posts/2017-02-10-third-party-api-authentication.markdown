@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "3rd Party API Authentication"
+title: "3rd Party API Authentication with Auth0"
 description: "Announcing 3rd Party API Authentication with Auth0"
 date: 2017-02-09 8:30
 category: Technical Guide, API, Authentication
@@ -36,7 +36,7 @@ With Auth0, you can do the following:
 * [Configure a server-to-server interaction to use OAuth 2.0](https://auth0.com/docs/api-auth/grant/client-credentials)
 * [Dynamic Client Registration](https://auth0.com/docs/api-auth/dynamic-client-registration)
 
-and [many more!](https://auth0.com/docs/api-auth).
+and [many more!](https://auth0.com/docs/api-auth)
 
 Let’s quickly take a look at how you can use Auth0 to authorize Client-side web apps in order to access an API.
 
