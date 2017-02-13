@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "3rd Party API Authentication with Auth0"
-description: "Announcing 3rd Party API Authentication with Auth0"
+title: "Third Party API Authentication with Auth0"
+description: "APIs are now first class citizens. Learn how to perform third Party API authentication with Auth0."
 date: 2017-02-09 8:30
 category: Technical Guide, API, Authentication
 author:
@@ -36,9 +36,9 @@ With Auth0, you can do the following:
 * [Configure a server-to-server interaction to use OAuth 2.0](https://auth0.com/docs/api-auth/grant/client-credentials)
 * [Dynamic Client Registration](https://auth0.com/docs/api-auth/dynamic-client-registration)
 
-and [many more!](https://auth0.com/docs/api-auth)
+and [much more!](https://auth0.com/docs/api-auth)
 
-Let’s quickly take a look at how you can use Auth0 to authorize Client-side web apps in order to access an API.
+Let’s quickly take a look at how you can use Auth0 to authorize client-side web apps in order to access an API.
 
 ## Use Auth0 to authorize Client-side Web Apps in order to access an API
 
@@ -57,7 +57,7 @@ This is the process flow:
 
 The first time the user goes through this flow a consent page will be shown where the permissions are listed that will be given to the Client.
 
-Open up your [Auth0 dashboard](https://manage.auth0.com), then head over to [advanced account settings](https://manage.auth0.com/#/account/advanced). 
+Open up your [Auth0 dashboard](https://manage.auth0.com), then head over to [Advanced Account settings](https://manage.auth0.com/#/account/advanced). 
 
 Activate the `Enable APIs Section` flag like so:
 
@@ -81,7 +81,7 @@ curl --request POST \
 
 ```
 
-`audience` refers to your API, `client_id` and `client_secret` refers to that of the client application authorized on your dashboard.
+The `audience` property is your API route. The `client_id` and `client_secret` properties refer to the Client application authorized in your [Auth0 dashboard](https://manage.auth0.com).
 
 This is an `access_token` for the request made above:
 
@@ -94,7 +94,7 @@ This is an `access_token` for the request made above:
 
 ```
 
-You can now use this `bearer token` with an `Authorization Header` in your request to obtain authorized access to your API like so:
+You can now use this `Bearer token` with an `Authorization Header` in your request to obtain authorized access to your API like so:
 
 ```bash
 
@@ -104,7 +104,7 @@ curl --request GET \
 
 ```
 
-Examples of making such requests via `NodeJS`, `Java`, `JQuery` and more are shown on the Auth0 dashboard.
+Examples of making such requests via `NodeJS`, `Java`, `jQuery` and more are shown on the [Auth0 dashboard](https://manage.auth0.com/#/apis).
 
 ### Executing the Implicit Grant Flow
 
@@ -123,6 +123,8 @@ The user authorizes the client like so:
 ![Authorize](https://cdn.auth0.com/blog/third-party/authorize.png)
 
 You can now extract the `access_token` from the hash fragment of the URL after Auth0 has redirected back to the client like so:
+
+> **Note:** The code sample below assumes you are making use of jQuery
 
 ```js
 
@@ -169,11 +171,11 @@ $('#get-appointments').click(function(e) {
 
 ```
 
-More examples can be found in the [awesome Auth0 documentation](https://auth0.com/docs/api-auth)
+More examples can be found in the [awesome Auth0 documentation](https://auth0.com/docs/api-auth).
 
 
 ## Conclusion
 
-Auth0 now offer APIs as first class citizens and a lot of ways to consume them. With Dynamic Client Registration, Auth0 account owners can open up their APIs to the world while security os enforced by user consent.
+Auth0 now offers APIs as first class citizens and a lot of ways to consume them. With Dynamic Client Registration, Auth0 account owners can open up their APIs to the world while security is enforced by user consent.
 
 Developers, you can start taking advantage of this opportunity by getting started with the [docs](https://auth0.com/docs/api-auth).
