@@ -2,7 +2,7 @@
 layout: post
 title: "Announcing Third Party Client API Authorization"
 description: "APIs are now first-class citizens at Auth0. Learn how third party client api authorization works."
-date: 2017-02-16 08:30
+date: 2017-03-20 08:30
 category: Announcement, Feature, API Authorization
 press_release: true
 design:
@@ -26,13 +26,13 @@ related:
 - 2016-08-24-announcing-password-breach-detection
 ---
 
-Today, we are introducing a new feature for all of our users, [third party client api authorization](https://auth0.com/docs/apis). Read on to find out how it works and how to enable it for your account.
+Today, we are introducing a new feature for all of our users; [Third Party Client API Authorization](https://auth0.com/docs/apis). Read on to find out how it works and how to use it.
 
 {% include tweet_quote.html quote_text="Introducing a new feature for all Auth0 users: Third Party Client API Authorization!" %}
 
 Up until now, Auth0 has been known and widely used for application authentication where both the client and API were owned by the same organization. Now, APIs have been elevated to become first class citizens at Auth0. 
 
-Auth0 customers (tenant admins) can now create several APIs and Clients under an account. Optionally, a tenant admin might give a third party developer a set of `client ID` and `client secret` representing a third party client. With those credentials, a third party client could ask for consent to access an Auth0 customer's API on behalf of a customer's user.
+Auth0 customers (tenant admins) can now create several APIs and Clients under an account. Optionally, a tenant admin might give a third party developer a set of `client ID` and `client secret` credentials, representing a third party client. With those credentials, a third party client could ask for consent to access an Auth0 customer's API on behalf of a customer's user.
 
 The third party client has the sole responsibility of executing any of the available [OAuth flows](https://auth0.com/docs/api-auth/which-oauth-flow-to-use) in order to get valid access tokens for any APIs.
 
