@@ -126,6 +126,20 @@ _Grab Access token from the hash fragment of the URL_
 
 In a Single Page Application (SPA) this would be done using Javascript and in a Mobile Application this is typically handled by interacting with a Web View.
 
+## Developer Portal
+
+At Auth0, we live to make developer's lives easy and reduce the time required to ship! So, we have built a developer portal that makes generation of clients with `client_id` and `client_secret` a breeze. You don't have to manually call the *Dynamic Client Registration* API, it has been automated for you!
+
+An Auth0 customer can fork this [application](https://github.com/auth0/developer-centre), provide the necessary configuration as required by the software(developer-portal) to allow third party developers easily create clients with a set of `client_id` and `client_secret` credentials and set it up to showcase their API documentation.
+
+![Settings.json](https://cdn.auth0.com/blog/third-party/settingsjson.png) 
+_Developer Portal Config_
+
+![Developer Centre](https://cdn.auth0.com/blog/third-party/developercentre.gif)
+_Developer Centre_
+
+**Note:** The application has a [frontend](https://github.com/auth0/developer-centre) and a [backend](https://github.com/auth0/developer-centre-api). Follow the instructions on the readme to set it up.
+
 
 ## Conclusion
 
