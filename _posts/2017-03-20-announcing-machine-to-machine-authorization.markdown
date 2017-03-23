@@ -26,18 +26,18 @@ related:
 - 2016-08-24-announcing-password-breach-detection
 ---
 
-Today, we are introducing a new authorization feature for all of our users; [Machine to Machine Authorization](https://auth0.com/docs/api-auth/grant/client-credentials). Read on to find out how it works and how to use it.
+Today, we are introducing a new authorization feature for all of our users: [Machine to Machine Authorization](https://auth0.com/docs/api-auth/grant/client-credentials). Read on to find out how it works and how to use it.
 
 {% include tweet_quote.html quote_text="Introducing a new authorization feature for all Auth0 users: Machine to Machine Authorization!" %}
 
-A non-interactive application (a CLI, a daemon, or a service running on your backend), can now directly ask Auth0 for an `access_token` by using its client credentials, **Client ID** and **Client Secret** to authenticate.
+A non-interactive application (a CLI, a daemon, or a service running on your backend) can now directly ask Auth0 for an `access_token` by using its client credentials, **Client ID** and **Client Secret*, to authenticate.
 
 ![Client Credentials Grant](https://cdn.auth0.com/docs/media/articles/api-auth/client-credentials-grant.png)
 _Client Credentials grant_
 
-Once the `access_token` has been returned, the application can use the `access_token` to call an API and have access to its resource on behalf of itself.
+Once the `access_token` has been returned, the application can use the `access_token` to call an API resource on behalf of itself.
 
-## How do I make this work?
+## How Do I Make This Work?
 
 To be able to implement this form of authorization, you have to execute a [Client Credentials grant](https://auth0.com/docs/api-auth/tutorials/client-credentials).
 
@@ -55,4 +55,4 @@ Clone the project from [Github](https://github.com/auth0-samples/auth0-api-auth-
 
 ## Conclusion
 
-Auth0 now offers APIs as first class citizens. Auth0 account owners can open up their APIs to the world while security is enforced by user consent. Apart from machine to machine authorization, Auth0 offers other ways to perform API authorization. You can learn how to perform these forms of API authorization by going through our clearly laid out [documentation](https://auth0.com/docs/api-auth).
+Auth0 now offers APIs as first class citizens. Auth0 account owners can open up their APIs to the world while security is enforced by user consent. Apart from machine to machine authorization, Auth0 offers other ways to perform API authorization. You can learn how to perform these forms of API authorization by going through our [documentation](https://auth0.com/docs/api-auth).
