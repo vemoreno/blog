@@ -127,9 +127,6 @@ Promise.config({
 export function configure(aurelia) {
   aurelia.use
     .standardConfiguration()
-    .plugin('aurelia-auth', (baseConfig) =>  {
-      baseConfig.configure(config);
-    })
     .feature('resources');
 
   if (environment.debug) {
@@ -145,7 +142,7 @@ export function configure(aurelia) {
 
 ```
 
-You can see here that we're importing a file called `auth-config.js` and that it's the export from this file that is passed to the `baseConfig` for the plugin. The `auth-config` file will let us override the aurelia-auth plugin's defaults with our own specifics. Worthy of mention is the `environment` file that we imported. With Aurelia 1.0, we can easily define the plugins and resources we want to load in either `debug`, `testing`, or `production` mode. Now, let's create the `auth-config` file:
+With Aurelia 1.0, we can easily define the plugins and resources we want to load in either `debug`, `testing`, or `production` mode. Now, let's create the `auth-config` file:
 
 ```js
 // src/auth-config.js
@@ -291,7 +288,6 @@ export class App {
   activate() {
 
     // Here we run the configuration when the app loads
-    console.log(this.fetchConfig);
     this.fetchConfig.configure();
     this.appRouterConfig.configure();
 
@@ -598,7 +594,9 @@ export class RandomQuote {
   randomQuote = '';
 
   constructor(http) {
-    this.http = http;
+    this.http = http; this.http = http.configure(x => {
+      x.withHeader('Authorization', 'Bearer ' + localStorage.getItem('aurelia_id_token'));
+    });
   };
 
   activate() {
@@ -619,21 +617,38 @@ The `super-secret-quote` route is pretty much the same, except that we make our 
 ```js
 // src/secret-quote.js
 
-...
+import {inject} from 'aurelia-framework';
+import {HttpClient} from 'aurelia-http-client';
 
-activate() {
-  return this.http.get('http://localhost:3001/api/protected/random-quote')
-  .then(response => {
-    this.secretQuote = response.content;
-  }).catch(error => {
-    console.log('Error getting quote');
-  });
-}
+// Using Aurelia's dependency injection, we inject HttpClient
+// with the @inject decorator to make HTTP requests
+@inject(HttpClient)
+
+export class SecretQuote {
+
+  heading = 'Secret Quote';
+
+  secretQuote = '';
+
+  constructor(http) {
+    this.http = http.configure(x => {
+      x.withHeader('Authorization', 'Bearer ' + localStorage.getItem('aurelia_id_token'));
+    });
+  };
+
+  activate() {
+    return this.http.get('http://localhost:3001/api/protected/random-quote')
+    .then(response => {
+      this.secretQuote = response.content;
+    }).catch(error => {
+      console.log('Error getting quote');
+    });
+  }
 
 ...
 ```
 
-As you can see, the only real difference here is that the GET request we're making is going to the `protected/random-quote` endpoint. If there is no valid JWT in `localStorage`, we won't be able to get to this route. If somehow we got to it, the request would fail because no JWT would be sent to the server.
+As you can see, we are configuring the http client to send an authorization header that carries the id_tokenthe only real difference here is that the GET request we're making is going to the `protected/random-quote` endpoint. If there is no valid JWT in `localStorage`, we won't be able to get to this route. If somehow we got to it, the request would fail because no JWT would be sent to the server.
 
 ![](https://cdn.auth0.com/blog/aurelia/aurelia-super-secret-quote.png?dl=1)
 _Aurelia Super Secret Quote Page_
