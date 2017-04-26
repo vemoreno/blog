@@ -54,7 +54,7 @@ Many of today's applications aren't deployed the same way they were in the past.
 
 Since traditional authentication relies on the server to keep the user's authentication state in memory, things break down when the app is accessed from different servers. The user might be logged in on one server but not on the others that the application is distributed across.
 
-We can get around this by using methods like [**sticky sessions**](http://stackoverflow.com/questions/10494431/sticky-and-non-sticky-sessions). A sticky session will essentially route the user to the server instance from which they logged in so that the authentication state can be presevered. This type of workaround will do the job, but as we'll see, stateful servers in general don't play that well with modern applications.
+We can get around this by using methods like [**sticky sessions**](http://stackoverflow.com/questions/10494431/sticky-and-non-sticky-sessions). A sticky session will essentially route the user to the server instance from which they logged in so that the authentication state can be perservered. This type of workaround will do the job, but as we'll see, stateful servers in general don't play that well with modern applications.
 
 ### 2. Apps use APIs for data
 
