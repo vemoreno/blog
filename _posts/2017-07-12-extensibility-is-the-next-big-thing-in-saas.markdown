@@ -22,11 +22,11 @@ tags:
   - wannacry
 ---
 
-Trello sold at $500 million because it was the go-to tool for starting a project. Want to organize ideas for your work/creative live/app/etc.? Just join Trello — it's perfect for that.
+Trello sold at $500 million because it was the go-to tool for starting a project. Want to organize ideas for your work/creative live/app/etc.? Just join Trello, it's perfect for that.
 
 And it was perfect for starting ideas. But it wasn't always perfect for finishing them. As projects got bigger, collaboration grew, and businesses kept adding SaaS tools, users moved on to bigger, more powerful products.
 
-This isn't a new story for software. People will always flock to good design and good products, but somewhere along the line they require more power and more customization to fit their needs — and that, in a nutshell, is why extensibility matters.
+This isn't a new story for software. People will always flock to good design and good products, but somewhere along the line they require more power and more customization to fit their needs and that, in a nutshell, is why extensibility matters.
 
 Your product needs to be able to grow, shift and accommodate to what users need over time. Previously, the go-to for building your product out was WebHooks. But WebHooks stopped being the best solution when extensibility became a must-have for every product.
 
@@ -34,7 +34,7 @@ Now, SaaS is looking at ways to ease these problems and get into the meat of wha
 
 ## Customizability for customers
 
-You can build a good product — you can even build a great one. But you're never going to be able to build something that will be perfect for every single customer right out of the box. Customers will always want to be able to customize themselves.
+You can build a good product, you can even build a great one. But you're never going to be able to build something that will be perfect for every single customer right out of the box. Customers will always want to be able to customize themselves.
 
 When your customer can add on exactly what their marketing team needs, or build a feature that takes your product from good to perfect, they're happier customers that stick around longer. And while you may not be able to build that “perfect-for-them” product, you can empower them to build it themselves.
 
@@ -60,13 +60,13 @@ Salesforce, for example, is a platform that has survived in large part because t
 
 _Salesforce's AppExchange was an early facilitator of app extensions for its platform that has continued to expand usability for the platform. *| [Source](https://image.slidesharecdn.com/howtotransformbusinessprocesseswithmobileapps-150429070054-conversion-gate01/95/how-to-transform-business-processes-with-salesforce-apps-webinar-13-638.jpg?cb=1430291040)_
 
-Having an easily customizable platform can also be a big factor in bringing new users to your product. If a lead is worried they won't *quite *be able to get what they need out of your product, highlighting how easy it is to add features and different extensions that have been built on your product can tip them into the yes pile.
+Having an easily customizable platform can also be a big factor in bringing new users to your product. If a lead is worried they won't *quite* be able to get what they need out of your product, highlighting how easy it is to add features and different extensions that have been built on your product can tip them into the yes pile.
 
-At the end of the day, the magic of extensibility for any and all sales teams is about providing real value to customers. You built your product because you saw that it could offer people a much-needed solution to a problem, and the core of your business is getting customers to succeed. Making it as easy as possible for customers to get exactly what they need from your product is a logical extension of any company's — and sales team's — mission.
+At the end of the day, the magic of extensibility for any and all sales teams is about providing real value to customers. You built your product because you saw that it could offer people a much-needed solution to a problem, and the core of your business is getting customers to succeed. Making it as easy as possible for customers to get exactly what they need from your product is a logical extension of any company's and sales team's mission.
 
 ## Transparency for support
 
-It's easier to diagnose and fix customer issues when all of the custom code they're executing for their plugins and integrations is *within the app itself. *The load that your support people have to lift when dealing with technical issues is greatly lessened when the only unknown is the customer's code, and not how they're plugging into your platform.
+It's easier to diagnose and fix customer issues when all of the custom code they're executing for their plugins and integrations is *within the app itself.* The load that your support people have to lift when dealing with technical issues is greatly lessened when the only unknown is the customer's code, and not how they're plugging into your platform.
 
 That means solving problems with customers' integrations gets way quicker.
 
