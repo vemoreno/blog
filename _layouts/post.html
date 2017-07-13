@@ -12,14 +12,14 @@ is_post: true
   <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l4rua&p_id=Twitter" />
 </noscript>
 
-<article itemprop="mainEntity" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="is_post" itemprop="mainEntity" itemscope itemtype="http://schema.org/BlogPosting">
   <link itemprop="mainEntityOfPage" href="https://auth0.com{{ site.baseurl }}{{page.url | replace:'index.html',''}}" />
   {% if page.updated %}
     <meta itemprop="dateModified" content="{{ page.updated }}">
   {% endif %}
   {% include banner_post.html %}
 
-  {% include utility_bar.html %}
+  <!--{% include utility_bar.html %}-->
 
   <div id="container" class="container">
     <div class="row sticky-container">
@@ -74,6 +74,23 @@ is_post: true
             (d.head || d.body).appendChild(s);
         })();
     </script>
+    <script>
+      //Sticky header + color functionality for A/B Experiment
+      if($(window).width() >= 992 && $('article.is_post').length){
+        heroColor = $('.banner-post').css('background-color');
+        $('._3TAQ._3uJX').css('background-color', heroColor);
+        $(window).scroll(function() {    
+          var scroll = $(window).scrollTop();
+          if (scroll >= 118) {
+              $("#header").addClass("is_stuck");
+          } else {
+              $("#header").removeClass("is_stuck");
+          }
+        });
+      }
+    </script>
+
+
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
   </div>

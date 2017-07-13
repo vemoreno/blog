@@ -430,6 +430,15 @@
           stickElement($('.sidebar-column'));
           stickElement($('.utility-bar'));
           stickElement($('.blog-navigation'), {parent: "body"});
+
+          // Sticky Header functionality for A/B Experiment
+          if($(window).width() >= 992 && $('article.is_post').length){
+            stickElement($('#header'), {parent: "body", sticky_class: ""});
+            $("#header").stick_in_parent()
+            .on("sticky_kit:unstick", function(e) {
+              console.log("has stuck!", e.target);
+            });
+          }
         }
 
         function initBlogSubscriber() {
