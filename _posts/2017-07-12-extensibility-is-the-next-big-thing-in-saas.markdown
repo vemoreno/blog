@@ -3,7 +3,7 @@ layout: post
 title: "Extensibility is The Next Big Thing in SaaS"
 description: "Trello, Slack, SalesForce And You"
 date: 2017-07-12 16:00
-category: Security, Data Breach, Cyberattack
+category: Growth, Extensibility, Extend
 author:
   name: Diego Poza
   url: https://twitter.com/diegopoza
@@ -16,10 +16,9 @@ related:
   - 2017-05-13-a-massive-ransomware-attack-targets-organizations-around-the-globe
   - 2015-12-15-security-trends-for-2016
 tags:
-  - security
-  - data-breach
-  - ransomware
-  - wannacry
+  - Extend
+  - extensibility
+  - Customizability
 ---
 
 Trello sold at $500 million because it was the go-to tool for starting a project. Want to organize ideas for your work/creative live/app/etc.? Just join Trello, it's perfect for that.
