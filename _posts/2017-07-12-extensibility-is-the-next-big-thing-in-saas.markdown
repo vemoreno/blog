@@ -10,8 +10,8 @@ author:
   avatar: https://avatars3.githubusercontent.com/u/604869?v=3&s=200
   mail: diego.poza@auth0.com
 design:
-    bg_color: "#7F2833"
-    image: https://cdn.auth0.com/blog/petya-ransomware/petya-logo.png
+    bg_color: "#855F3F"
+    image: https://cdn.auth0.com/blog/saasextensibility/logo.png
 related:
   - 2017-05-13-a-massive-ransomware-attack-targets-organizations-around-the-globe
   - 2015-12-15-security-trends-for-2016
