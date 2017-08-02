@@ -64,6 +64,7 @@ Don't like the trigger you just created? Hit the Delete button in the Triggers l
 
 ![it's like magic](https://cdn.auth0.com/website/blog/extend/auth0-extend-salesforce-with-node/extend-sfdc-working-with-triggers.gif)
 
+--- 
 ### Tell Us What You Think
 
 We hope you are as excited as we are about Extend for Salesforce. We can't wait to see what you will create with it. And over the coming months, we will be working diligently to add new features based on your feedback.
