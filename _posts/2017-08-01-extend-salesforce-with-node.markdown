@@ -88,7 +88,7 @@ module.exports = (ctx, cb) => {
 };
 ```
 
-This code uses the slack-notify NPM module to send a message to the #general channel in Slack with the username Salesforce. I have also added an attachment to the message that displays the executing version of Node.js used. Extend for Salesforce runs on the latest Node.js 8, giving you access to the most recent language features.
+This code uses the slack-notify NPM module to send a message to the #general channel in Slack with the username Salesforce. I have also added an attachment to the message that displays the executing version of Node.js used. Extend for Salesforce runs on Node 8, giving you access to the most recent language features.
 
 As mentioned earlier, you have full access to all Node.js modules hosted on NPM. To use slack-notify, you need to add it as a dependency.  
 
