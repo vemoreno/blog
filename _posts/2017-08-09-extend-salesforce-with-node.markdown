@@ -2,7 +2,7 @@
 layout: post_extend
 title: "Extend Salesforce with Node.js"
 description: "Introducing Auth0 Extend for Salesforce! Extend your Salesforce using Node.js in just a few clicks."
-date: 2017-08-01 11:13
+date: 2017-08-09 12:00
 is_extend: true
 category: Extend, Technical, Salesforce
 author: 
