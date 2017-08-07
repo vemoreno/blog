@@ -39,6 +39,8 @@ Want to notify your employees every time a big deal closes? You can quickly crea
 
 Wouldn't it be nice if every time you added a lead in Salesforce, it was also added to your Marketo campaigns? Add a trigger on the lead object, pull in the [marketo-rest-api](https://www.npmjs.com/package/marketo-rest-api) module, and use it to send the lead along.
 
+Extend for Salesforce is built on [Auth0 Extend](https://auth0.com/extend/), our extensibility as a service platform. It can let your customers create extensions to your SaaS quickly and easily. Sign up for our free developer account [here](https://auth0.com/extend/try).
+
 ---
 
 ### Take It for a Spin
@@ -72,8 +74,8 @@ Head over to [Extend for Salesforce](https://auth0.com/extend/salesforce/app) an
 
 - Click the Create New Trigger button
 - Name it "SendToSlack"
-- Select the Lead Salesforce object
-- Select the After Insert event
+- Select the *Lead* Salesforce object
+- Select the *After Insert* event
 - Finally, click the Create button
 
 You should now see the Extend Editor. Click the double headed arrow icon in the lower left-hand corner of the editor to give you some room to work.
@@ -123,7 +125,7 @@ That is all there is to it. Go add a new lead in Salesforce and watch a notifica
 
 ### Tell Us What You Think
 
-With Extend for Salesforce you have a new way to write triggers, using Node.js! Go try it out here. We cannot wait to see what you will create with it! Over the coming months, we will be working diligently to add new features based on your feedback.
+With Extend for Salesforce you have a new way to write triggers, using Node.js! Go try it out [here](https://auth0.com/extend/salesforce/app). We cannot wait to see what you will create with it! Over the coming months, we will be working diligently to add new features based on your feedback.
 
 If your organization is interested in using Extend for Salesforce or you have a tip/suggestion, [let us know](https://auth0.com/extend/salesforce/) via the Talk to Sales link.
 
