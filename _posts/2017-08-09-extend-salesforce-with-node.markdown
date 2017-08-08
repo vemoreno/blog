@@ -56,20 +56,6 @@ Let's walk through a simple use case for sending a Slack notification to the tea
 
 ---
 
-Secrets are a secure storage feature of Extend for Salesforce. The values are encrypted while stored and decrypted only for execution. Let's hide your Slack Webhook URL there.
-
-- Click the wrench icon in the upper left-hand corner of the editor
-- Select Secrets
-- Click the Add Secret button
-- Enter "slack_url" as the key
-- Enter the Slack Webhook URL as the value
-- Click the Save button
-- Close Secrets
-
-![add secret](https://cdn.auth0.com/website/blog/extend/auth0-extend-salesforce-with-node/add_secret.gif)
-
----
-
 Head over to [Extend for Salesforce](https://auth0.com/extend/salesforce/app) and log in, if you have not done so already. Follow these steps.
 
 - Click the Create New Trigger button
@@ -81,6 +67,20 @@ Head over to [Extend for Salesforce](https://auth0.com/extend/salesforce/app) an
 You should now see the Extend Editor. Click the double headed arrow icon in the lower left-hand corner of the editor to give you some room to work.
 
 ![create trigger](https://cdn.auth0.com/website/blog/extend/auth0-extend-salesforce-with-node/create_trigger3.gif)
+
+---
+
+Secrets are a secure storage feature of Extend for Salesforce. The values are encrypted while stored and decrypted only for execution. Let's hide your Slack Webhook URL there.
+
+- Click the wrench icon in the upper left-hand corner of the editor
+- Select Secrets
+- Click the Add Secret button
+- Enter "slack_url" as the key
+- Enter the Slack Webhook URL as the value
+- Click the Save button
+- Close Secrets
+
+![add secret](https://cdn.auth0.com/website/blog/extend/auth0-extend-salesforce-with-node/add_secret.gif)
 
 ---
 
