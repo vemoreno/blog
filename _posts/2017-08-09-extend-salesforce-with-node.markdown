@@ -109,7 +109,7 @@ module.exports = (ctx, cb) => {
     channel: 'general',
     username: 'Salesforce',
     icon_emoji: ':moneybag: ',
-    text: 'New Lead: ' + item.Name
+    text: `New Lead: ${item.FirstName} ${item.LastName} from ${item.Company}`
   };
 
   slack.send(message);
