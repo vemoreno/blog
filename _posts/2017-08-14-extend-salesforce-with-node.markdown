@@ -33,7 +33,12 @@ We want to enable NodeJS developers to harness the power of the Salesforce platf
 
 ### Extend for Salesforce
 
-<script src="https://fast.wistia.com/embed/medias/h4q94yk945.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.0% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_h4q94yk945 videoFoam=true" style="height:100%;width:100%">&nbsp;</div></div></div>
+<script src="//fast.wistia.com/embed/medias/h4q94yk945.jsonp" async></script>
+<script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+<div class="empower-video-button wistia_embed wistia_async_h4q94yk945 popover=true popoverContent=html">
+  <img class="video-button" src="https://cdn.auth0.com/website/auth0-extend/icons/empower-button-video.svg" alt="button">
+  <img class="video-screen" src="https://cdn.auth0.com/auth0-extend/assets/extend-salesforce-screen-2.jpg" alt="Screen">
+</div>
 
 ---
 
