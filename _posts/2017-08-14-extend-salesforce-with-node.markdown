@@ -2,7 +2,7 @@
 layout: post_extend
 title: "Extend Salesforce with Node.js"
 description: "Introducing Auth0 Extend for Salesforce! Extend your Salesforce using Node.js in just a few clicks."
-date: 2017-08-09 12:00
+date: 2017-08-14 12:00
 is_extend: true
 category: Extend, Technical, Salesforce
 author: 
@@ -32,6 +32,10 @@ We want to enable NodeJS developers to harness the power of the Salesforce platf
 ---
 
 ### Extend for Salesforce
+
+<script src="https://fast.wistia.com/embed/medias/h4q94yk945.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.0% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_h4q94yk945 videoFoam=true" style="height:100%;width:100%">&nbsp;</div></div></div>
+
+---
 
 Today we are announcing the public beta of [Extend for Salesforce](https://auth0.com/extend/salesforce). You can now implement triggers in Node v8 and you can leverage any of the more than 400K modules in the NPM ecosystem. Best of all you can do this right from the browser. With Extend for Salesforce, your team can quickly and easily customize your Salesforce logic using a language many modern programmers already use.
 
